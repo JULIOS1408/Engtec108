@@ -3,18 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiência - Quimtec</title>
+    <title>Experiência - Quimtec Consultoria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #004080;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        header {
+            background: #002040;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            font-size: 22px;
+            font-weight: bold;
+            z-index: 10;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #001530;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            top: 60px;
+            z-index: 10;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            margin-top: 120px;
+            text-align: center;
+            width: 80%;
+        }
+        .titulo-principal {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .descricao {
+            font-size: 18px;
+            text-align: center;
+            max-width: 100%;
+        }
+        .fundo-marca {
+            position: absolute;
+            bottom: 20px;
+            font-size: 60px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            user-select: none;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .whatsapp-button a {
+            color: white;
+            text-decoration: none;
+        }
+        .destaque {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .destaque h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .destaque ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .destaque ul li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .destaque ul li::before {
+            content: "✔";
+            margin-right: 10px;
+            color: #4CAF50;
+        }
+        .processo {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+        .processo h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .processo p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Experiência Profissional</h1>
+        Quimtec Consultoria
     </header>
-    <section>
-        <h2>Casos de Perícia</h2>
-        <p>Atuamos em perícias judiciais nos setores de fármacos, alimentos, saneamento e meio ambiente.</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Quimtec Consultoria - Todos os direitos reservados.</p>
-    </footer>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="experiencia.html">Experiência</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <div class="content">
+        <h1 class="titulo-principal">📚 Experiência em Processos</h1>
+        <p class="descricao">
+            Confira alguns dos processos em que atuamos como perito judicial, demonstrando nossa expertise e compromisso com a verdade técnica.
+        </p>
+
+        <div class="destaque">
+            <h2>Processos Judiciais</h2>
+            <div class="processo">
+                <h3>Comarca de Arcos – 2ª Vara Cível, Criminal e de Execuções Penais</h3>
+                <p><strong>Número do Processo:</strong> 5001238-39.2019.8.13.0042</p>
+                <p><strong>Autor:</strong> Ana Paula Mello de Almeida</p>
+                <p><strong>Réu:</strong> SPAL Indústria Brasileira de Bebidas S/A</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Belo Horizonte – 11ª Vara Cível</h3>
+                <p><strong>Número do Processo:</strong> 5121593-69.2018.8.13.0024</p>
+                <p><strong>Objeto:</strong> Anticoncepcional</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Montes Claros – 1ª Vara Cível</h3>
+                <p><strong>Número do Processo:</strong> 5004290-73.2015.8.13.0433</p>
+                <p><strong>Objeto:</strong> Insulina</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Montes Claros – 4ª Vara Cível</h3>
+                <p><strong>Número do Processo:</strong> 5009803-80.2019.8.13.0433</p>
+                <p><strong>Objeto:</strong> Refrigerante</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Betim – 1ª Vara Cível</h3>
+                <p><strong>Número do Processo:</strong> 5024095-27.2019.8.13.0027</p>
+                <p><strong>Objeto:</strong> Refrigerante</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Sete Lagoas – 3ª Vara Cível</h3>
+                <p><strong>Número do Processo:</strong> 5005806-51.2019.8.13.0672</p>
+                <p><strong>Objeto:</strong> Refrigerante</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Araxá – 1ª Vara Cível</h3>
+                <p><strong>Número do Processo:</strong> 0116856-70.2012.8.13.0040</p>
+                <p><strong>Objeto:</strong> Estação de Tratamento - Meio Ambiente/Expropriação</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Caratinga – 1ª Vara Cível</h3>
+                <p><strong>Número do Processo:</strong> Não informado</p>
+                <p><strong>Objeto:</strong> Tributário e Fiscal - Classificação do MAPA (Doces Mineiros)</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Uberaba – 4ª Vara Federal Cível e Criminal da SSJ</h3>
+                <p><strong>Número do Processo:</strong> 1003239-06.2019.4.01.3802</p>
+                <p><strong>Objeto:</strong> PIS/COFINS - Geladeira</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Uberaba – Justiça Federal</h3>
+                <p><strong>Número do Processo:</strong> 0002624-04.2017.4.01.3802</p>
+                <p><strong>Objeto:</strong> NCM - Registro de Produto (Defensivo Agrícola/Adequação)</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Formiga – 2ª Vara Cível</h3>
+                <p><strong>Número do Processo:</strong> 0002624-04.2017.4.01.3802</p>
+                <p><strong>Objeto:</strong> PIS/COFINS - Indústria de Mineração e Produção de Fertilizantes</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Carmo do Paranaíba – Vara Cível e da Infância e Juventude</h3>
+                <p><strong>Número do Processo:</strong> 5000174-40.2024.8.13.0261</p>
+                <p><strong>Autor:</strong> Geralda Pires Lima</p>
+                <p><strong>Réu:</strong> Mart Minas Distribuição Ltda e outros</p>
+                <p><strong>Objeto:</strong> Ação de Indenização por Dano Moral e Material</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Carmo do Paranaíba – Vara Cível e da Infância e Juventude</h3>
+                <p><strong>Número do Processo:</strong> 50005580820208130143</p>
+                <p><strong>Objeto:</strong> Saneamento e danos ambientais</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Coração de Jesus</h3>
+                <p><strong>Número do Processo:</strong> 50016837420218130143</p>
+                <p><strong>Objeto:</strong> Saneamento e danos ambientais</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Belo Horizonte</h3>
+                <p><strong>Número do Processo:</strong> Não informado</p>
+                <p><strong>Objeto:</strong> Análise de água</p>
+            </div>
+
+            <div class="processo">
+                <h3>Comarca de Belo Horizonte</h3>
+                <p><strong>Número do Processo:</strong> 6010823-94.2015.8.13.0024</p>
+                <p><strong>Réu:</strong> Bunge Alimentos S/A</p>
+                <p><strong>Objeto:</strong> Proposta de honorários e resposta à manifestação da requerida</p>
+            </div>
+        </div>
+    </div>
+    <a href="https://wa.me/5534998928196" target="_blank" class="whatsapp-button">💬</a>
+    <div class="fundo-marca">Quimtec</div>
 </body>
 </html>
