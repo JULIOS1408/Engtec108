@@ -3,23 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços - Quimtec</title>
+    <title>Serviços - Quimtec Consultoria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #004080;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        header {
+            background: #002040;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            font-size: 22px;
+            font-weight: bold;
+            z-index: 10;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #001530;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            top: 60px;
+            z-index: 10;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            margin-top: 120px;
+            text-align: center;
+            width: 80%;
+        }
+        .titulo-principal {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .descricao {
+            font-size: 18px;
+            text-align: center;
+            max-width: 100%;
+        }
+        .fundo-marca {
+            position: absolute;
+            bottom: 20px;
+            font-size: 60px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            user-select: none;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .whatsapp-button a {
+            color: white;
+            text-decoration: none;
+        }
+        .destaque {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .destaque h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .destaque ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .destaque ul li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .destaque ul li::before {
+            content: "✔";
+            margin-right: 10px;
+            color: #4CAF50;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Nossos Serviços</h1>
+        Quimtec Consultoria
     </header>
-    <section>
-        <h2>Consultoria e Perícias</h2>
-        <ul>
-            <li>Perícias Judiciais e Extrajudiciais</li>
-            <li>Consultoria em Engenharia Química</li>
-            <li>Laudos Técnicos e Pareceres</li>
-            <li>Análise de Risco e Segurança Industrial</li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2024 Quimtec Consultoria - Todos os direitos reservados.</p>
-    </footer>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="experiencia.html">Experiência</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <div class="content">
+        <h1 class="titulo-principal">🔧 Nossos Serviços</h1>
+        <p class="descricao">
+            Precisão Técnica para Resultados Confiáveis <br>
+            A Quimtec Consultoria oferece serviços técnicos especializados em perícias e consultoria, garantindo que empresas e advogados tenham suporte técnico sólido para fortalecer processos e tomar decisões estratégicas.
+        </p>
+
+        <div class="destaque">
+            <h2>🔎 Perícias Técnicas e Judiciais</h2>
+            <ul>
+                <li>Perícias Judiciais e Extrajudiciais – Laudos técnicos completos para processos cíveis, criminais e administrativos.</li>
+                <li>Assistência Técnica para Advogados – Análises técnicas especializadas para reforçar a argumentação em disputas jurídicas.</li>
+                <li>Auditorias Técnicas e Regulatórias – Avaliação da conformidade com normas e regulamentos nacionais e internacionais.</li>
+                <li>Pareceres Técnicos – Análises fundamentadas para embasar defesa ou contestação em litígios.</li>
+            </ul>
+        </div>
+
+        <div class="destaque">
+            <h2>⚙️ Consultoria Técnica Especializada</h2>
+            <ul>
+                <li>Engenharia Química – Avaliação de processos industriais, controle de qualidade e segurança de produtos.</li>
+                <li>Engenharia Ambiental – Monitoramento de poluentes, impacto ambiental e cumprimento de normas ambientais.</li>
+                <li>Engenharia Industrial – Otimização de processos, eficiência produtiva e segurança operacional.</li>
+                <li>Engenharia de Produção – Gestão de qualidade, redução de custos e inovação industrial.</li>
+                <li>Segurança do Trabalho – Prevenção de riscos, conformidade com regulamentações e mitigação de acidentes laborais.</li>
+            </ul>
+        </div>
+
+        <div class="destaque">
+            <h2>🔬 Análises Técnicas e Laboratoriais</h2>
+            <ul>
+                <li>Cosméticos – Avaliação de ingredientes, conformidade regulatória e eficácia de produtos.</li>
+                <li>Fármacos – Controle de qualidade, testes laboratoriais e segurança de medicamentos.</li>
+                <li>Bebidas – Análises físico-químicas, segurança alimentar e conformidade com normas sanitárias.</li>
+                <li>Embalagens – Testes de resistência, interação com produtos e impacto na conservação de alimentos e medicamentos.</li>
+                <li>Monitoramento de Emissões – Controle de poluentes em processos industriais.</li>
+                <li>Tratamento de Efluentes – Análise e conformidade ambiental.</li>
+                <li>Segurança Química – Manuseio e armazenamento de produtos químicos industriais.</li>
+            </ul>
+        </div>
+
+        <div class="destaque">
+            <h2>📞 Entre em contato e descubra como podemos auxiliar você!</h2>
+            <p>
+                💬 Botão do WhatsApp para atendimento direto.
+            </p>
+        </div>
+    </div>
+    <a href="https://wa.me/5534998928196" target="_blank" class="whatsapp-button">💬</a>
+    <div class="fundo-marca">Quimtec</div>
 </body>
 </html>
