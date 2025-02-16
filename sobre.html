@@ -3,26 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós - Quimtec</title>
+    <title>Sobre Nós - Quimtec Consultoria</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #004080; color: white; padding: 15px; text-align: center; }
-        nav { display: flex; justify-content: center; background: #002040; padding: 10px; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        section { padding: 20px; }
-        footer { background: #004080; color: white; text-align: center; padding: 10px; width: 100%; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #004080;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        header {
+            background: #002040;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            font-size: 22px;
+            font-weight: bold;
+            z-index: 10;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #001530;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            top: 60px;
+            z-index: 10;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            margin-top: 120px;
+            text-align: center;
+            width: 80%;
+        }
+        .titulo-principal {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .descricao {
+            font-size: 18px;
+            text-align: center;
+            max-width: 100%;
+        }
+        .fundo-marca {
+            position: absolute;
+            bottom: 20px;
+            font-size: 60px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            user-select: none;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .whatsapp-button a {
+            color: white;
+            text-decoration: none;
+        }
+        .destaque {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .destaque h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .destaque ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .destaque ul li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .destaque ul li::before {
+            content: "✔";
+            margin-right: 10px;
+            color: #4CAF50;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Sobre a Quimtec</h1>
+        Quimtec Consultoria
     </header>
-    <section>
-        <h2>Quem Somos</h2>
-        <p>Somos especialistas em Engenharia Química, atuando nas áreas de alimentos, bebidas, cosméticos, fármacos, saneamento e perícias ambientais.</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Quimtec Consultoria - Todos os direitos reservados.</p>
-    </footer>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="experiencia.html">Experiência</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <div class="content">
+        <h1 class="titulo-principal">🌟 Sobre a Quimtec</h1>
+        <p class="descricao">
+            Compromisso com a Excelência Técnica <br>
+            A Quimtec Consultoria nasceu da visão e experiência de Juliano Roberto, um engenheiro químico e professor, apaixonado por ciência e justiça.
+        </p>
+
+        <div class="destaque">
+            <h2>💡 Nossa Missão</h2>
+            <p>
+                Garantir que a verdade técnica prevaleça em disputas judiciais e processos regulatórios, fornecendo análises especializadas, laudos sólidos e consultoria estratégica para empresas e advogados.
+            </p>
+        </div>
+
+        <div class="destaque">
+            <h2>👁️ Nossa Visão</h2>
+            <p>
+                Ser referência nacional em perícias judiciais e consultoria técnica, promovendo soluções inovadoras e fundamentadas na ciência e na legislação vigente.
+            </p>
+        </div>
+
+        <div class="destaque">
+            <h2>🔑 Nossos Diferenciais</h2>
+            <ul>
+                <li>Experiência Comprovada – Mais de uma década de atuação em processos complexos.</li>
+                <li>Precisão e Rigor Científico – Análises baseadas em normas técnicas e regulatórias.</li>
+                <li>Consultoria Estratégica – Apoio a advogados e empresas na construção de teses técnicas sólidas.</li>
+                <li>Compromisso com a Justiça e a Ética – Laudos imparciais e transparentes.</li>
+            </ul>
+        </div>
+
+        <div class="destaque">
+            <h2>🌍 Nossos Campos de Atuação</h2>
+            <ul>
+                <li>🔬 Engenharia Química – Segurança industrial, controle de qualidade, processos produtivos.</li>
+                <li>🌱 Engenharia Ambiental – Análise de impacto, controle de poluentes, soluções sustentáveis.</li>
+                <li>🏭 Engenharia Industrial – Eficiência produtiva, otimização de processos, segurança operacional.</li>
+                <li>📊 Engenharia de Produção – Gestão da qualidade, redução de custos, melhoria contínua.</li>
+                <li>💄 Cosméticos – Avaliação de segurança e eficácia de produtos.</li>
+                <li>💊 Fármacos – Testes laboratoriais e conformidade com normas sanitárias.</li>
+                <li>🥤 Bebidas – Análises físico-químicas e controle de qualidade.</li>
+                <li>📦 Embalagens – Testes de resistência e conformidade com regulamentações.</li>
+            </ul>
+        </div>
+
+        <div class="destaque">
+            <h2>🔎 Na Quimtec, ciência e estratégia andam lado a lado</h2>
+            <p>
+                Transformamos dados técnicos em provas incontestáveis.
+            </p>
+        </div>
+
+        <div class="destaque">
+            <h2>📞 Entre em contato e conheça como podemos ajudar você!</h2>
+            <p>
+                💬 Botão do WhatsApp para atendimento direto.
+            </p>
+        </div>
+    </div>
+    <a href="https://wa.me/5534998928196" target="_blank" class="whatsapp-button">💬</a>
+    <div class="fundo-marca">Quimtec</div>
 </body>
 </html>
